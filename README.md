@@ -7,6 +7,7 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 ## Packages
 - [x] Sogou Pinyin Lib
 - [x] OSDLyrics 
+- [x] Netease-Musicbox
 - [ ] Sublime
 - [ ] HydroDev
 - [ ] Lumos
