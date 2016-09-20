@@ -5,8 +5,9 @@ My Presonal Build Script for AOSC OS abbs
 This repo contains my own user repo of [AOSC OS](https://aosc.io)
 
 ## Packages
-- Sogou Pinyin Lib
-- WineQQ
-- Sublime
-- HydroDev
-- Lumos
+- [x] Sogou Pinyin Lib
+- [ ] OSDLyrics 
+- [ ] Sublime
+- [ ] HydroDev
+- [ ] Lumos
+- [ ] Googler
