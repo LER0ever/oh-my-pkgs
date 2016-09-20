@@ -1,0 +1,2 @@
+wget https://github.com/jarun/googler/raw/v${PKGVER}/googler
+install -Dm755 googler "$PKGDIR"/usr/bin/googler

@@ -1,0 +1,10 @@
+export GOPATH="$SRCDIR"
+mkdir -p "$SRCDIR"/src/github.com/LER0ever/
+cd "$SRCDIR"/src/github.com/LER0ever
+git clone https://github.com/LER0ever/HydroDev
+cd HydroDev
+glide install
+go build
+ls
+install -Dm755 HydroDev "$PKGDIR"/usr/bin/HydroDev
+cd "$SRCDIR"

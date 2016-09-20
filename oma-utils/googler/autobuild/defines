@@ -1,0 +1,4 @@
+PKGNAME=googler
+PKGSEC=utils
+PKGDEP="python-3"
+PKGDES="Google Search, Google Site Search, Google News from the terminal"
