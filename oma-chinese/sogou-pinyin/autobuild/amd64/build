@@ -1,0 +1,8 @@
+dpkg -x sogoupinyin_${PKGVER}_amd64.deb "$PKGDIR"
+
+cd "$PKGDIR"
+mv usr/lib/x86_64-linux-gnu/fcitx usr/lib
+rm -rf {etc,usr/{bin,lib/{mime,x86_64-linux-gnu}}}
+rm -rf usr/share/{applications,doc,fcitx-sogoupinyin,glib-2.0,icons,keyrings,locale,mime,pixmaps,sogoupinyin,sogou-qimpanel}
+cd "$SRCDIR"
+

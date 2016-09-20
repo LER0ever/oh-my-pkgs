@@ -1,0 +1,8 @@
+PKGNAME=sogou-pinyin
+PKGSEC=localization
+PKGDEP="fcitx"
+PKGDES="Sogou Pinyin Addons for Fcitx"
+
+ABSTRIP=no
+FAIL_ARCH="!(amd64)"
+

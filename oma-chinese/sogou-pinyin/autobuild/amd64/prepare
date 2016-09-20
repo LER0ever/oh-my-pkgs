@@ -1,0 +1,2 @@
+_time=1465191139
+wget "http://cdn2.ime.sogou.com/dl/index/${_time}/sogoupinyin_${PKGVER}_amd64.deb"
