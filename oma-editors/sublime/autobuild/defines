@@ -1,0 +1,5 @@
+PKGNAME="sublime-text-3"
+PKGSEC=editors
+PKGDEP="glibc"
+PKGDES="Sublime Text is a sophisticated text editor for code, markup and prose."
+

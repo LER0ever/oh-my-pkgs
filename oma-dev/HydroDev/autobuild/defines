@@ -1,5 +1,5 @@
 PKGNAME=HydroDev
-PKGSE=devel
+PKGSEC=devel
 PKGDEP="glibc"
 BUILDDEP="go glide"
 PKGDES="Your Next(Gen) Full Featured DevPack"

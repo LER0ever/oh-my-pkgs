@@ -1,6 +1,7 @@
 PKGNAME=musicbox
 PKGSEC=multimedia
-PKGDEP="requests beautifulsoup4 pycrypto"
-BUILDDEP="setuptools pip"
+PKGDEP="requests beautifulsoup4 pycrypto future"
+BUILDDEP="setuptools"
 PKGDES="CLI Version of Netease-CloudMusic"
 
+NOPYTHON2=yes

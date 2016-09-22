@@ -8,7 +8,8 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 - [x] Sogou Pinyin Lib
 - [x] OSDLyrics 
 - [x] Netease-Musicbox
-- [x] Python-Future
+- [x] Python-Future (MERGED)
+- [x] Python-BeautifulSoup (Fix python3 Issue)
 - [ ] Sublime
 - [ ] HydroDev
 - [ ] Lumos
