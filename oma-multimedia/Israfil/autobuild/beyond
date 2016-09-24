@@ -1,0 +1,2 @@
+cp -r "$SRCDIR"/bin/* "$PKGDIR"/usr/bin/
+

@@ -1,0 +1,8 @@
+PKGNAME=Israfil
+PKGSEC=sounds
+PKGDEP="qt-5 curl"
+PKGDES="asdf"
+
+ABTYPE=qtproj
+USEQT5=yes
+NOPARALLEL=yes

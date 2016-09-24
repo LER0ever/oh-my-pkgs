@@ -1,0 +1,4 @@
+PKGNAME="vscode-bin"
+PKGSEC="devel"
+PKGDEP="libnotify nss"
+PKGDES="Visual Studio Code"

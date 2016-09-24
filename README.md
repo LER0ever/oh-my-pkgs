@@ -7,9 +7,10 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 ## Packages
 - [x] Sogou Pinyin Lib
 - [x] OSDLyrics 
-- [x] Netease-Musicbox
-- [x] Python-Future (MERGED)
-- [x] Python-BeautifulSoup (Fix python3 Issue)
+- [x] Visual Studio Code [binary]
+- [x] Netease-Musicbox[MERGED]
+- [x] Python-Future [MERGED]
+- [x] Python-BeautifulSoup(fix python3 issue) [MERGED]
 - [ ] Sublime
 - [ ] HydroDev
 - [ ] Lumos
