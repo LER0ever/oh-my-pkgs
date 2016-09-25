@@ -1,0 +1,6 @@
+export LDFLAGS="-Wall -shared"
+#python2 setup.py config_fc --fcompiler=gnu95 --noarch build
+python3 setup.py config_fc --fcompiler=gnu95 --noarch build
+
+python3 setup.py config_fc --fcompiler=gnu95 install \
+    --prefix="$PKGDIR" --optimize=1

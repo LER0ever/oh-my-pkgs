@@ -1,5 +1,8 @@
 PKGNAME=scipy
 PKGSEC=python
-PKGDEP="python-2 python-3"
+PKGDEP="python-2 python-3 numpy cython"
 BUILDDEP="setuptools"
 PKGDES="Open Source Python library for mathematics, science and engineering"
+
+NOPYTHON2=yes
+
