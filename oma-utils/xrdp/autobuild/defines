@@ -1,0 +1,4 @@
+PKGNAME=xrdp
+PKGSEC=utils
+PKGDEP="rdesktop"
+PKGDES="RDP Server"

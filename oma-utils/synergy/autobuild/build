@@ -1,0 +1,14 @@
+# Prepare for Ext
+cd ext
+unzip gmock-1.6.0.zip -d gmock-1.6.0
+unzip gtest-1.6.0.zip -d gtest-1.6.0
+cd ..
+
+# Shadow CMake
+mkdir build && cd build
+cmake ..
+make -j
+cd ..
+
+# Move binaries
+mv bin/* "$PKGDIR"/usr/bin

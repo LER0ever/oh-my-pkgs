@@ -1,0 +1,6 @@
+PKGNAME=synergy
+PKGSEC=utils
+PKGDEP="x11-lib x11-proto"
+PKGDES="Share mouse and keyboard between multiple devices"
+
+
