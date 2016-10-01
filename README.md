@@ -12,7 +12,7 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 - [x] Python-Future [MERGED]
 - [x] Python-BeautifulSoup(fix python3 issue) [MERGED]
 - [x] Arandr
-- [ ] Sublime
+- [x] Sublime
 - [ ] HydroDev
 - [ ] Lumos
 - [x] Googler

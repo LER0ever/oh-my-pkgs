@@ -1,0 +1,6 @@
+mkdir -p "$PKGDIR"/usr/share/sublime_text_3
+cp -r * "$PKGDIR"/usr/share/sublime_text_3
+sed -e 's|/opt/sublime_text|/usr/share/sublime_text_3|g' -i "$SRCDIR"/sublime_text.desktop
+mkdir -p "$PKGDIR"/usr/share/applications/
+cp sublime_text.desktop "$PKGDIR"/usr/share/applications/sublime_text.desktop
+

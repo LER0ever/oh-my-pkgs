@@ -1,2 +1,2 @@
-VER=3114
-SRCTBL="https://download.sublimetext.com/sublime_text_3_build_$VER_x64.tar.bz2"
+VER=3126
+SRCTBL="https://download.sublimetext.com/sublime_text_3_build_${VER}_x64.tar.bz2"
