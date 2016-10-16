@@ -1,0 +1,2 @@
+VER=0.9.8
+SRCTBL="https://github.com/uTox/uTox/archive/v$VER.tar.gz"

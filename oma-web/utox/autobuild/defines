@@ -1,0 +1,6 @@
+PKGNAME=utox
+PKGSEC=web
+PKGDEP="toxcore freetype"
+PKGDES="µTox the lightest and fluffiest Tox client"
+
+MAKE_AFTER="FILTER_AUDIO=0"

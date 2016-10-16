@@ -1,0 +1,4 @@
+PKGNAME="xf86-input-libinput"
+PKGSEC=x11
+PKGDEP="libinput xorg-server"
+PKGDES="Generic input driver for X11, Fake one"

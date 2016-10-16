@@ -20,3 +20,4 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 - [ ] Lumos
 - [x] Googler
 - [ ] Israfil
+- [x] libinput (virtual package)
