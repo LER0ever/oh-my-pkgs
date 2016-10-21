@@ -16,6 +16,7 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 - [x] Arandr [MERGED]
 - [x] x11vnc [MERGED]
 - [x] xrdp
+- [x] luarocks
 - [ ] HydroDev
 - [ ] Lumos
 - [x] Googler
