@@ -1,13 +1,14 @@
 # oh-my-abbs
 My Presonal Build Script for AOSC OS abbs
 
-## About
-This repo contains my own user repo of [AOSC OS](https://aosc.io)
+# Oh-my-pkgbuild
+My PKGBUILD script for Manjaro.
 
-## Packages
+
+## AOSC Packages
 - [x] Sogou Pinyin Lib
 - [x] OSDLyrics 
-- [x] Visual Studio Code Bin
+- [x] Visual Studio Code Bin [duplicates]
 - [x] Netease-Musicbox[MERGED]
 - [x] Python-Future [MERGED]
 - [x] Python-BeautifulSoup(fix python3 issue) [MERGED]
@@ -22,3 +23,6 @@ This repo contains my own user repo of [AOSC OS](https://aosc.io)
 - [x] Googler
 - [ ] Israfil
 - [x] libinput (virtual package)
+
+## PKGBUILD Packages
+- [x] Telegram-desktop-bin (the original one is out-of-date)
