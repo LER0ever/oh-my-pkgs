@@ -13,6 +13,9 @@ My PKGBUILD script for Manjaro.
 - [x] Python-Future [MERGED]
 - [x] Python-BeautifulSoup(fix python3 issue) [MERGED]
 - [x] Sublime
+- [x] openmw
+- [x] mygui
+- [x] unshield
 - [x] Synergy
 - [x] Arandr [MERGED]
 - [x] x11vnc [MERGED]
