@@ -1,0 +1,4 @@
+PKGNAME=gpick
+PKGSEC=utils
+PKGDEP="gtk-2 lua expat boost"
+BUILDDEP="scons ragel gcc"

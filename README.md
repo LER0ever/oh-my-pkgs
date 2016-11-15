@@ -15,6 +15,8 @@ My PKGBUILD script for Manjaro.
 - [x] Sublime
 - [x] openmw
 - [x] mygui
+- [x] skypeforlinux (Alpha)
+- [x] gpick [NOT READY]
 - [x] unshield
 - [x] Synergy
 - [x] Arandr [MERGED]
