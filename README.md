@@ -15,6 +15,7 @@ My PKGBUILD script for Manjaro.
 - [x] Sublime
 - [x] openmw
 - [x] mygui
+- [x] rustup (cannot compile due to rustc linker err)
 - [x] skypeforlinux (Alpha)
 - [x] gpick [NOT READY]
 - [x] unshield

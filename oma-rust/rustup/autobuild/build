@@ -1,0 +1,5 @@
+cargo build --release --features no-self-update --bin rustup-init
+mkdir -p  "${SRCDIR}"/rustup-init/.cargo/
+env -u CARGO_HOME "${SRCDIR}/cargo-init/" target/release/rustup-init -y --no-modify-path
+install -dm755 "${PKGDIR}/usr/bin"
+cp "${SRCDIR}"/rustup-init/.cargo/bin/* "${PKGDIR}"/usr/bin/

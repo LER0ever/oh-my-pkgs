@@ -1,0 +1,5 @@
+PKGNAME=rustup
+PKGSEC=devel
+PKGDEP="glibc"
+BUILDDEP="cargo"
+PKGDES="Rust toolchains installer and updater"
