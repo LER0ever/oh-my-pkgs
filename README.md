@@ -24,6 +24,7 @@ My PKGBUILD script for Manjaro.
 - [x] x11vnc [MERGED]
 - [x] xrdp
 - [x] luarocks
+- [x] nitrogen
 - [ ] HydroDev
 - [ ] Lumos
 - [x] Googler
