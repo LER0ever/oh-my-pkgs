@@ -25,6 +25,10 @@ My PKGBUILD script for Manjaro.
 - [x] xrdp
 - [x] luarocks
 - [x] nitrogen
+- [x] rxvt-unicode
+- [x] ranger
+- [x] rustfmt
+- [x] racer
 - [ ] HydroDev
 - [ ] Lumos
 - [x] Googler
