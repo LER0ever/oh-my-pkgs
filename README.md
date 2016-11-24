@@ -13,8 +13,8 @@ My PKGBUILD script for Manjaro.
 - [x] Python-Future [MERGED]
 - [x] Python-BeautifulSoup(fix python3 issue) [MERGED]
 - [x] Sublime
-- [x] openmw
-- [x] mygui
+- [x] openmw [MERGED]
+- [x] mygui [MERGED]
 - [x] rustup (cannot compile due to rustc linker err)
 - [x] skypeforlinux (Alpha)
 - [x] gpick [NOT READY]
@@ -24,11 +24,11 @@ My PKGBUILD script for Manjaro.
 - [x] x11vnc [MERGED]
 - [x] xrdp
 - [x] luarocks
-- [x] nitrogen
-- [x] rxvt-unicode
-- [x] ranger
-- [x] rustfmt
-- [x] racer
+- [x] nitrogen [MERGED]
+- [x] rxvt-unicode [MERGED]
+- [x] ranger [MERGED]
+- [x] rustfmt [MERGED]
+- [x] racer [MERGED]
 - [ ] HydroDev
 - [ ] Lumos
 - [x] Googler
