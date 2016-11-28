@@ -1,12 +1,12 @@
 # oh-my-abbs
-My Presonal Build Script for AOSC OS abbs
-Packages labeled [MERGED] won't be updated any more, use official repo instead.
+My Presonal Build Script for AOSC OS abbs  
+Packages labeled [MERGED] won't be updated any more, use official repo instead.  
 
 # Oh-my-pkgbuild
 My PKGBUILD script for Manjaro.
 
 
-## AOSC Packages
+## AOSC OS Packages
 - [x] Sogou Pinyin Lib
 - [x] OSDLyrics-fresh
 - [x] Visual Studio Code Bin [DUPLICATES]
