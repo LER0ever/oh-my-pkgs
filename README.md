@@ -1,5 +1,6 @@
 # oh-my-abbs
 My Presonal Build Script for AOSC OS abbs
+Packages labeled [MERGED] won't be updated any more, use official repo instead.
 
 # Oh-my-pkgbuild
 My PKGBUILD script for Manjaro.
@@ -7,8 +8,8 @@ My PKGBUILD script for Manjaro.
 
 ## AOSC Packages
 - [x] Sogou Pinyin Lib
-- [x] OSDLyrics 
-- [x] Visual Studio Code Bin [duplicates]
+- [x] OSDLyrics-fresh
+- [x] Visual Studio Code Bin [DUPLICATES]
 - [x] Netease-Musicbox[MERGED]
 - [x] Python-Future [MERGED]
 - [x] Python-BeautifulSoup(fix python3 issue) [MERGED]
@@ -20,6 +21,7 @@ My PKGBUILD script for Manjaro.
 - [x] gpick [NOT READY]
 - [x] unshield
 - [x] Synergy
+- [x] Min (browser)
 - [x] Arandr [MERGED]
 - [x] x11vnc [MERGED]
 - [x] xrdp

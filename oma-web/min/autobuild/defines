@@ -1,0 +1,6 @@
+PKGNAME="min"
+PKGDES="A smarter web browser built on top of electron"
+PKGDEP="gconf desktop-file-utils nss gnuplot"
+PKGSEC=web
+
+FAIL_ARCH="!(amd64)"
