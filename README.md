@@ -21,6 +21,7 @@ My PKGBUILD script for Manjaro.
 - [x] gpick [NOT READY]
 - [x] unshield
 - [x] Synergy
+- [x] neofetch
 - [x] Min (browser)
 - [x] Arandr [MERGED]
 - [x] x11vnc [MERGED]
