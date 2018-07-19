@@ -5,9 +5,13 @@ Packages labeled [MERGED] won't be updated any more, use official repo instead.
 # Oh-my-pkgbuild
 My PKGBUILD script for Manjaro.
 
+## PKGBUILD Packages
+- [x] Linux Kernel Zen (march native)
+- [x] Konsole with HiDPI fixes
+- [x] Telegram-desktop-bin (the original one is out-of-date)
 
 ## AOSC OS Packages
-- [x] Sogou Pinyin Lib
+- [x] Sogou Pinyin Lib [MERGED]
 - [x] OSDLyrics-fresh
 - [x] Visual Studio Code Bin [DUPLICATES]
 - [x] Netease-Musicbox[MERGED]
@@ -38,5 +42,3 @@ My PKGBUILD script for Manjaro.
 - [ ] Israfil
 - [x] libinput (virtual package)
 
-## PKGBUILD Packages
-- [x] Telegram-desktop-bin (the original one is out-of-date)
