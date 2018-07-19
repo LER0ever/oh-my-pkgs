@@ -1,14 +1,14 @@
-# oh-my-abbs
-My Presonal Build Script for AOSC OS abbs  
-Packages labeled [MERGED] won't be updated any more, use official repo instead.  
-
-# Oh-my-pkgbuild
+# omp-*
 My PKGBUILD script for Manjaro.
+
+# oma-*
+My Presonal Build Script for AOSC OS abbs  
+Packages labeled [MERGED] won't be updated any more, i've already submitted them to upstream, please use official repo instead.  
 
 ## PKGBUILD Packages
 - [x] Linux Kernel Zen (march native)
 - [x] Konsole with HiDPI fixes
-- [x] Telegram-desktop-bin (the original one is out-of-date)
+- [x] Telegram-desktop-bin [DEPRECATED]
 
 ## AOSC OS Packages
 - [x] Sogou Pinyin Lib [MERGED]
