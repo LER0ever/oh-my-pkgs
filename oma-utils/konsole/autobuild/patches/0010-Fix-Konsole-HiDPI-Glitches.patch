@@ -1,0 +1,104 @@
+diff --git a/src/TerminalDisplay.cpp b/src/TerminalDisplay.cpp
+--- a/src/TerminalDisplay.cpp
++++ b/src/TerminalDisplay.cpp
+@@ -45,6 +45,8 @@
+ #include <QDrag>
+ #include <QDesktopServices>
+ #include <QAccessible>
++#include <QWindow>
++#include <QScreen>
+ 
+ // KDE
+ #include <KShell>
+@@ -793,20 +795,28 @@
+ 
+     // shift rectangle top down one pixel to leave some space
+     // between top and bottom
+-    QRect cursorRect = rect.adjusted(0, 1, 0, 0);
++    QRectF cursorRect = rect.adjusted(0, 1, 0, 0);
+ 
+     QColor cursorColor = _cursorColor.isValid() ? _cursorColor : foregroundColor;
+-    painter.setPen(cursorColor);
++    QPen pen(cursorColor);
++    //scale only integer factors
++    pen.setWidth(qRound(window()->windowHandle()->screen()->devicePixelRatio()));
++    pen.setCosmetic(true);
++    //don't round corners
++    pen.setJoinStyle(Qt::MiterJoin);
++    painter.setPen(pen);
+ 
+     if (_cursorShape == Enum::BlockCursor) {
+         // draw the cursor outline, adjusting the area so that
+         // it is draw entirely inside 'rect'
+-        int penWidth = qMax(1, painter.pen().width());
+-        painter.drawRect(cursorRect.adjusted(penWidth / 2,
++        qreal penWidth = painter.pen().widthF();
++        painter.drawRect((int)penWidth % 2 == 0
++                         ? cursorRect
++                         : cursorRect.adjusted(penWidth / 2,
+                                              penWidth / 2,
+-                                             - penWidth / 2 - penWidth % 2,
+-                                             - penWidth / 2 - penWidth % 2));
+-
++                                             - penWidth / 2,
++                                             - penWidth / 2));
++        if(window()->windowHandle()&&window()->windowHandle()->screen())
+         // draw the cursor body only when the widget has focus
+         if (hasFocus()) {
+             painter.fillRect(cursorRect, cursorColor);
+@@ -831,6 +841,7 @@
+     }
+ }
+ 
++
+ void TerminalDisplay::drawCharacters(QPainter& painter,
+                                      const QRect& rect,
+                                      const QString& text,
+@@ -1253,10 +1264,15 @@
+ 
+             // add the area occupied by this line to the region which needs to be
+             // repainted
+-            QRect dirtyRect = QRect(_contentRect.left() + tLx ,
+-                                    _contentRect.top() + tLy + _fontHeight * y ,
+-                                    _fontWidth * columnsToUpdate ,
+-                                    _fontHeight);
++            //with fractional scaling (ie QT_SCREEN_SCALE_FACTORS=1.3
++            //there can be rounding errors due to the painting code being all based on QRects instead of QRectF (not easily
++            //fixable, because the rects arrive fromthe paintevent's
++            //QRegion which doesn't have a qreal based alternative
++            //so grow the dirty region by one pixel to make sure every dirty pixel is cleaned up
++            QRect dirtyRect = QRect(_contentRect.left() + tLx,
++                                    _contentRect.top() + tLy + _fontHeight * y,
++                                    _fontWidth * columnsToUpdate,
++                                    _fontHeight).adjusted(-1, -1, 1, 1);
+ 
+             dirtyRegion |= dirtyRect;
+         }
+@@ -1269,18 +1285,18 @@
+     // if the new _image is smaller than the previous _image, then ensure that the area
+     // outside the new _image is cleared
+     if (linesToUpdate < _usedLines) {
+-        dirtyRegion |= QRect(_contentRect.left() + tLx ,
+-                             _contentRect.top() + tLy + _fontHeight * linesToUpdate ,
+-                             _fontWidth * this->_columns ,
+-                             _fontHeight * (_usedLines - linesToUpdate));
++        dirtyRegion |= QRect(_contentRect.left() + tLx,
++                             _contentRect.top() + tLy + _fontHeight * linesToUpdate,
++                             _fontWidth * this->_columns,
++                             _fontHeight * (_usedLines - linesToUpdate)).adjusted(-1, -1, 1, 1);
+     }
+     _usedLines = linesToUpdate;
+ 
+     if (columnsToUpdate < _usedColumns) {
+-        dirtyRegion |= QRect(_contentRect.left() + tLx + columnsToUpdate * _fontWidth ,
+-                             _contentRect.top() + tLy ,
+-                             _fontWidth * (_usedColumns - columnsToUpdate) ,
+-                             _fontHeight * this->_lines);
++        dirtyRegion |= QRect(_contentRect.left() + tLx + columnsToUpdate * _fontWidth,
++                             _contentRect.top() + tLy,
++                             _fontWidth * (_usedColumns - columnsToUpdate),
++                             _fontHeight * this->_lines).adjusted(-1, -1, 1, 1);
+     }
+     _usedColumns = columnsToUpdate;
+ 
+

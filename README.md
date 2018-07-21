@@ -11,6 +11,7 @@ Packages labeled [MERGED] won't be updated any more, i've already submitted them
 - [x] Telegram-desktop-bin [DEPRECATED]
 
 ## AOSC OS Packages
+- [x] Konsole with HiDPI fixes
 - [x] Sogou Pinyin Lib [MERGED]
 - [x] OSDLyrics-fresh
 - [x] Visual Studio Code Bin [DUPLICATES]
